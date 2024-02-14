@@ -1,0 +1,43 @@
+header{
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    padding: 10px 15px;
+}
+
+nav {
+    
+    ul{
+    display: flex;
+    margin-bottom: 0%;
+    }
+}
+
+li{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.anim{
+    text-decoration: none;
+    color: rgb(71, 68, 68);
+    padding: 10px;
+    position: relative;
+    &:hover{
+        color: rgb(85, 103, 134);
+    }
+}
+
+.anim:after{
+    @include menu-animacion;
+
+}
+
+.anim:hover:after{
+    width: 100%;
+    right: 0;
+}

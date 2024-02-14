@@ -1,0 +1,221 @@
+header {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center; }
+
+.logo {
+  padding: 10px 15px; }
+
+nav ul {
+  display: flex;
+  margin-bottom: 0%; }
+
+li {
+  display: flex;
+  list-style: none;
+  align-items: center; }
+
+.anim {
+  text-decoration: none;
+  color: #474444;
+  padding: 10px;
+  position: relative; }
+  .anim:hover {
+    color: #556786; }
+
+.anim:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #494949;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width; }
+
+.anim:hover:after {
+  width: 100%;
+  right: 0; }
+
+/*FOOTER*/
+footer {
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: auto; }
+
+.redes {
+  display: flex; }
+
+.logo_redes {
+  margin: 10px; }
+
+/*CARRITO*/
+.compras {
+  background-color: #4e4e4e;
+  width: 80vw;
+  margin: 35px  auto;
+  padding: 15px;
+  border-radius: 10px; }
+  .compras h2 {
+    font-size: 45px;
+    text-align: center;
+    color: aliceblue;
+    border-bottom: 3px solid aliceblue; }
+
+.barra-compras {
+  background-color: #b3b4b4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; }
+  .barra-compras p {
+    padding: 5px; }
+
+.carrito-list {
+  display: flex;
+  padding: 10px; }
+
+.carrito-detalles {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center; }
+  .carrito-detalles p {
+    color: aliceblue;
+    padding-left: 15px; }
+
+.carrito-foto {
+  width: 15%;
+  height: 15%; }
+
+.total {
+  display: flex;
+  justify-content: end; }
+  .total p {
+    color: aliceblue;
+    padding: 0 5%; }
+
+/*QUIENESSOMOS*/
+.quienessomos {
+  padding: 20px;
+  font-weight: bold;
+  background-color: aliceblue;
+  width: 90vw;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 30px; }
+
+.staff {
+  padding: 20px; }
+  .staff h2 {
+    font-size: 45px;
+    text-align: center;
+    color: aliceblue; }
+  .staff img {
+    width: 200px;
+    height: 200px; }
+
+.staff-fotos-content {
+  display: flex;
+  justify-content: space-evenly; }
+
+.staff-foto {
+  border-radius: 50%;
+  border: solid 5px #b6b6b6; }
+
+/*CONTACTO*/
+.container-contactos {
+  display: flex;
+  margin: 2em;
+  justify-content: space-around;
+  align-items: center; }
+
+.formulario {
+  background-color: #4765a7;
+  width: 75%;
+  padding: 5%;
+  border-radius: 5px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6%;
+  margin-top: 6%; }
+  .formulario h2 {
+    margin-bottom: 15px; }
+
+.inputs {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+
+.boton {
+  width: 120px;
+  height: 35px; }
+
+.mapa {
+  padding: 30px;
+  width: 70%; }
+
+.contacto {
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  align-items: center; }
+  .contacto p {
+    color: #fafafa;
+    font-weight: 200;
+    padding: 5px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/*carrousel*/
+#carouselExampleControls {
+  margin: 3%; }
+
+/*GALERIA*/
+.foto-galeria {
+  padding: 10px; }
+
+/*PRODUCTOS*/
+.card-container {
+  margin: auto;
+  width: 80vw; }
+
+.card {
+  background-color: #a5a4a4;
+  padding: 15px;
+  margin: 20px auto; }
+  .card p {
+    margin: auto; }
+
+@media (max-width: 1100px) {
+  .container-contactos {
+    display: block; }
+  .cont-section1, .cont-section2 {
+    margin: auto; } }
+
+@media (max-width: 684px) {
+  header {
+    flex-direction: column; }
+  footer {
+    flex-direction: column; }
+  .formulario {
+    margin: auto; }
+  .staff-fotos-content {
+    display: block;
+    justify-content: space-evenly; } }

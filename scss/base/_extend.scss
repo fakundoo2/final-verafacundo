@@ -1,0 +1,17 @@
+@mixin titulo-secundario {
+    font-size: $font-size-title;
+    text-align : $text-aling-title;
+    color : $color-title;
+}
+
+@mixin menu-animacion{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: rgb(73, 73, 73);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+}

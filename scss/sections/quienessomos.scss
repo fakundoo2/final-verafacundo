@@ -1,0 +1,33 @@
+/*QUIENESSOMOS*/
+.quienessomos{
+    padding: 20px;
+    font-weight: bold;
+    background-color: $color-title;
+    width: 90vw;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.staff {
+    padding: 20px;
+
+    h2 {
+        @include titulo-secundario;
+    }
+
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.staff-fotos-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.staff-foto {
+    border-radius: 50%;
+    border: solid 5px rgb(182, 182, 182);
+}

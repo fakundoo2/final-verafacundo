@@ -1,0 +1,217 @@
+header {
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding: 10px 15px;
+}
+
+nav ul {
+  display: flex;
+  margin-bottom: 0%;
+}
+
+li {
+  display: flex;
+  list-style: none;
+}
+
+.anim:after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: cadetblue;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+
+.anim:hover:after {
+  width: 100%;
+  right: 0;
+}
+
+/*FOOTER*/
+footer {
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: auto;
+}
+
+.redes {
+  display: flex;
+}
+
+.logo_redes {
+  margin: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*carrousel*/
+#carouselExampleControls {
+  margin: 3%;
+}
+
+/*GALERIA*/
+.foto-galeria {
+  padding: 10px;
+}
+
+/*PRODUCTOS*/
+.card-container {
+  margin: auto;
+  width: 80vw;
+}
+
+.card {
+  background-color: rgb(165, 164, 164);
+  padding: 15px;
+  margin: 20px auto;
+}
+.card p {
+  margin: auto;
+}
+
+/*QUIENESSOMOS*/
+.quienessomos {
+  padding: 20px;
+  font-weight: bold;
+  background-color: aliceblue;
+  width: 90vw;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 30px;
+}
+
+.staff {
+  padding: 20px;
+}
+.staff h2 {
+  font-size: 45px;
+  text-align: center;
+  color: aliceblue;
+}
+.staff img {
+  width: 200px;
+  height: 200px;
+}
+
+.staff-fotos-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.staff-foto {
+  border-radius: 50%;
+  border: solid 5px rgb(182, 182, 182);
+}
+
+/*CONTACTO*/
+.container-contactos {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.formulario {
+  background-color: rgb(71, 101, 167);
+  width: 75%;
+  padding: 5%;
+  border-radius: 5px;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 6%;
+  margin-top: 6%;
+}
+.formulario h2 {
+  margin-bottom: 15px;
+}
+
+.inputs {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.boton {
+  width: 120px;
+  height: 35px;
+}
+
+.section1, .section2 {
+  width: 40vw;
+}
+
+.section1 {
+  display: flex;
+}
+
+.mapa {
+  padding: 30px;
+  width: 400px;
+  height: 400px;
+}
+
+.contacto {
+  padding: 20px;
+  padding-top: 50px;
+}
+.contacto p {
+  color: rgb(250, 250, 250);
+  font-weight: 200;
+  padding: 5px;
+}
+
+/*MIS COMPRAS*/
+.compras {
+  background-color: rgb(78, 78, 78);
+  width: 80vw;
+  margin: 35px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.compras h2 {
+  color: aliceblue;
+}
+
+.barra-compras {
+  background-color: rgb(179, 180, 180);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.barra-compras p {
+  padding: 5px;
+}
+
+@media (max-width: 684px) {
+  header {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
